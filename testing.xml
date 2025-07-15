@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="QaproyectoqaTestSuite" parallel="false" verbose="1">
     <test name="QaproyectoqaTests">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.LoginRegisterTest"/>
             <class name="tests.AdminCreationTest"/>

@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [QaproyectoqaTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="QaproyectoqaTests(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.AdminCreationTest">
         <methods>
