@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [QaproyectoqaTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="QaproyectoqaTests(failed)" verbose="0">
+    <classes>
+      <class name="tests.AdminCreationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testCreatePreguntas"/>
+          <include name="testCreateSubtemas"/>
+          <include name="setupAdmin"/>
+          <include name="testCreateSectors"/>
+          <include name="testCreateTemas"/>
+        </methods>
+      </class> <!-- tests.AdminCreationTest -->
+      <class name="tests.LoginRegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testUserRegistration"/>
+          <include name="testLoginWithNonExistentUser"/>
+        </methods>
+      </class> <!-- tests.LoginRegisterTest -->
+      <class name="tests.EvaluationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testEvaluationResults"/>
+          <include name="testCreateEvaluations"/>
+          <include name="setupUser"/>
+        </methods>
+      </class> <!-- tests.EvaluationTest -->
+    </classes>
+  </test> <!-- QaproyectoqaTests(failed) -->
+</suite> <!-- Failed suite [QaproyectoqaTestSuite] -->

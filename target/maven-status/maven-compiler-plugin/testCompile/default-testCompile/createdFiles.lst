@@ -1,0 +1,4 @@
+base\BaseTest.class
+tests\LoginRegisterTest.class
+tests\EvaluationTest.class
+tests\AdminCreationTest.class

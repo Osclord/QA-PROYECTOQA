@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QaproyectoqaTestSuite" parallel="false" verbose="1">
+    <test name="QaproyectoqaTests">
+        <classes>
+            <class name="tests.LoginRegisterTest"/>
+            <class name="tests.AdminCreationTest"/>
+            <class name="tests.EvaluationTest"/>
+        </classes>
+    </test>
+</suite>

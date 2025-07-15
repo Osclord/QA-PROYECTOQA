@@ -1,0 +1,5 @@
+utils\TestHelpers.class
+utils\ConfigReader.class
+pages\AdminPage.class
+pages\EvaluationPage.class
+pages\LoginPage.class
