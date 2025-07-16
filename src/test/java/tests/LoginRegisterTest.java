@@ -17,7 +17,7 @@ public class LoginRegisterTest extends BaseTest {
         testHelpers.takeScreenshot("initial_login_page");
         
         // Try to login with non-existent user
-        loginPage.login("usuario_inexistente@test.com", "password123");
+        loginPage.login("yosdoy@test.com", "password123");
         testHelpers.takeScreenshot("login_attempt_failed");
         
         // Verify login failed

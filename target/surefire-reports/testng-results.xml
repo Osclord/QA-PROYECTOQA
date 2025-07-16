@@ -1,81 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-15T18:33:59 COT" name="Surefire suite" finished-at="2025-07-15T18:33:59 COT" duration-ms="77">
+  <suite started-at="2025-07-16T14:08:42 COT" name="Surefire suite" finished-at="2025-07-16T14:09:13 COT" duration-ms="31336">
     <groups>
     </groups>
-    <test started-at="2025-07-15T18:33:59 COT" name="Surefire test" finished-at="2025-07-15T18:33:59 COT" duration-ms="77">
+    <test started-at="2025-07-16T14:08:42 COT" name="Surefire test" finished-at="2025-07-16T14:09:13 COT" duration-ms="31336">
       <class name="tests.LoginRegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="setUp" finished-at="1969-12-31T19:00:00 COT" duration-ms="-1752622439341" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:08:42 COT" name="setUp" finished-at="2025-07-16T14:08:44 COT" duration-ms="2446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithNonExistentUser()[pri:1, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="testLoginWithNonExistentUser" finished-at="2025-07-15T18:33:59 COT" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="testLoginWithNonExistentUser()[pri:1, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:08:44 COT" name="testLoginWithNonExistentUser" finished-at="2025-07-16T14:08:59 COT" duration-ms="14643" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-]]>
+              <![CDATA[Error message should be displayed for invalid login expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+              <![CDATA[java.lang.AssertionError: Error message should be displayed for invalid login expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.LoginRegisterTest.testLoginWithNonExistentUser(LoginRegisterTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -105,36 +62,53 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithNonExistentUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="tearDown" finished-at="2025-07-15T18:33:59 COT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:08:59 COT" name="tearDown" finished-at="2025-07-16T14:08:59 COT" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="setUp" finished-at="2025-07-15T18:33:59 COT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:08:59 COT" name="setUp" finished-at="2025-07-16T14:09:01 COT" duration-ms="1962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUserRegistration()[pri:2, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="testUserRegistration" finished-at="2025-07-15T18:33:59 COT" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="testUserRegistration()[pri:2, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:09:01 COT" name="testUserRegistration" finished-at="2025-07-16T14:09:13 COT" duration-ms="11668" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Registrar')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62309/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f324d339dba399d4be6baa665caf928]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Registrar')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62309/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f324d339dba399d4be6baa665caf928
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at utils.TestHelpers.waitForElementToBeClickable(TestHelpers.java:48)
+at utils.TestHelpers.clickElement(TestHelpers.java:52)
+at pages.LoginPage.clickRegisterLink(LoginPage.java:62)
+at pages.LoginPage.registerNewUser(LoginPage.java:66)
+at tests.LoginRegisterTest.testUserRegistration(LoginRegisterTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -164,11 +138,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-15T18:33:59 COT" name="tearDown" finished-at="2025-07-15T18:33:59 COT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginRegisterTest@7c469c48]" started-at="2025-07-16T14:09:13 COT" name="tearDown" finished-at="2025-07-16T14:09:13 COT" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

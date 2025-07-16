@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Optional;
 import utils.ConfigReader;
 import utils.TestHelpers;
 
@@ -20,9 +21,9 @@ public class BaseTest {
     protected WebDriverWait wait;
     protected TestHelpers testHelpers;
 
-    @BeforeMethod
+      @BeforeMethod
     @Parameters({"browser"})
-    public void setUp(String browser) {
+    public void setUp(@Optional("chrome") String browser) {
         setupDriver(browser != null ? browser : "chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

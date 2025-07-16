@@ -11,19 +11,20 @@ public class LoginPage {
     private TestHelpers testHelpers;
     
     // Locators
-    private By usernameField = By.name("username");
-    private By passwordField = By.name("password");
-    private By loginButton = By.xpath("//button[@type='submit']");
-    private By registerLink = By.xpath("//a[contains(text(),'Registrar')]");
-    private By errorMessage = By.className("error-message");
+    private By usernameField = By.name("TxtUsuario");
+    private By passwordField = By.name("TxtClave");
+    private By loginButton = By.xpath("//*[@id=\"BtnIngresar\"]");
+    private By registerLink = By.xpath("//*[@id=\"sidebar\"]/div/p/a");
+    private By errorMessage = By.className("dxeBase error");
+
     
     // Registration form locators
-    private By regEmailField = By.name("email");
-    private By regPasswordField = By.name("password");
-    private By regConfirmPasswordField = By.name("confirm_password");
-    private By regNameField = By.name("name");
-    private By regSectorDropdown = By.name("sector");
-    private By regSubmitButton = By.xpath("//button[@type='submit']");
+    private By regEmailField = By.name("TxtCorreo");
+    private By regPasswordField = By.name("TxtClave");
+    //private By regConfirmPasswordField = By.name("confirm_password");
+    private By regNameField = By.name("TxtNit");
+    private By regSectorDropdown = By.name("LstSector");
+    private By regSubmitButton = By.xpath("//*[@id=\"BtnRegistrar\"]");
     
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -65,7 +66,7 @@ public class LoginPage {
         testHelpers.sendKeys(regNameField, name);
         testHelpers.sendKeys(regEmailField, email);
         testHelpers.sendKeys(regPasswordField, password);
-        testHelpers.sendKeys(regConfirmPasswordField, password);
+        //testHelpers.sendKeys(regConfirmPasswordField, password);
         testHelpers.selectDropdownByText(regSectorDropdown, sector);
         testHelpers.clickElement(regSubmitButton);
     }
